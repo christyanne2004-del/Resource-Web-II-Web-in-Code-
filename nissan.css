@@ -1,0 +1,63 @@
+/* Navi starts here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    background-color: #d8cbb7;
+}
+
+
+header {
+    background-color: #b47b84;
+    padding: 25px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu-search {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.menu-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+
+.search {
+    width: 300px;
+    padding: 10px 15px;
+    background-color: #d59aa5;
+    border: none;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+nav a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s ease;
+}
+
+
+nav a:hover {
+    color: #741F3D;
+}

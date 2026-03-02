@@ -1,0 +1,147 @@
+/* Navi starts here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    background-color: #d8cbb7;
+}
+
+
+header {
+    background-color: #b47b84;
+    padding: 25px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu-search {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.menu-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+
+.search {
+    width: 300px;
+    padding: 10px 15px;
+    background-color: #d59aa5;
+    border: none;
+    outline: none;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+nav a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+
+nav a:hover {
+    color: #741F3D;
+}
+
+
+main {
+    padding: 80px 120px;
+}
+
+/* 1st heading */
+h1 {
+    font-size: 48px;
+    margin-bottom: 80px;
+}
+
+/* sqaures for my grid */
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 450px); 
+    gap: 100px; 
+    justify-content: center; 
+}
+
+/*  box */
+.car-card {
+    background-color: #cfa1a9;
+    border: 4px solid #8c4f5c;
+    padding: 40px;
+    text-align: center;
+    height: 360px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+/* for the images not added yet  */
+.car-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+}
+
+/* button for cars*/
+.car-btn {
+    display: inline-block;
+    padding: 12px 40px;
+    background-color: #d59aa5;
+    border: 3px solid #8c4f5c;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+   
+     margin-top :95%
+}
+
+/* hover for button  */
+.car-btn:hover {
+    background-color: #741F3D;
+    color: white;
+    transform: scale(1.10);
+}
+
+/* hover for button */
+.next-container {
+    margin-top: 120px;
+    text-align: right;
+}
+
+.next-btn {
+    padding: 12px 50px;
+    background-color: #d59aa5;
+    border: 3px solid #8c4f5c;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.next-btn:hover {
+    background-color: #741F3D;
+    color: white;
+}

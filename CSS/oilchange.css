@@ -1,0 +1,448 @@
+/* Variables  for Background html*/
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Fonts */
+
+.abel-regular{ 
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* background colour */
+body{
+  background-color: var(--cream);
+}
+
+
+
+/* https://www.w3schools.com/cssref/sel_root.php*/
+
+
+/* Root Variables for Colour and Fonts */
+
+:root{
+
+/* Colour Scheme */
+
+/* main background */
+--cream: #E8DBCC;
+--clr-neutral-100: var(--cream);
+
+/* accent beige */
+--sand: #C65A2E;
+--clr-neutral-200: var(--sand);
+
+/* muted rose */
+--rose: #5F0C27;
+--clr-accent-400: var(--rose);
+
+/* light pink */
+--pink: #FAA2C5;
+--clr-accent-300: var(--pink);
+
+/* dark accent */
+--wine: #741F3D;
+--clr-accent-500: var(--wine);
+
+/* header colours */
+--header-bg: #b47b84;
+--search-bg: #d59aa5;
+--nav-text: black;
+
+/* button colours */
+--btn-bg: #d59aa5;
+--btn-border: #8c4f5c;
+--btn-hover-bg: #741F3D;
+--btn-text: black;
+--btn-hover-text: white;
+
+
+
+
+/* Font Sizes */
+--fs-heading: 96px;
+--fs-subheading: 128px;
+
+--fs-body: 23px;
+
+/* Font Sizes for headers */
+--fs-h1: 40px;
+
+--fs-h2: 29px;
+--fs-h3: 29px;
+--fs-h4: 29px;
+--fs-h5: 29px;
+--fs-h6: 29px;
+
+--fs-small: 15px;
+--fs-button: 18px;
+
+
+/* Layout Sizes */
+--header-padding: 25px 80px;
+--main-padding: 80px 120px;
+
+--search-width: 300px;
+
+--menu-line-width: 30px;
+--menu-line-height: 3px;
+
+
+
+--content-width: 45%;
+--content-right-offset: 55%;
+
+
+/* Spacing */
+--gap-menu: 25px;
+
+--space-sm: 15px;
+--space-md: 30px;
+--space-lg: 40px;
+--space-xl: 60px;
+--space-xxl: 120px;
+
+
+/* Button Sizes */
+--btn-padding: 5px 50px;
+
+}
+
+
+
+
+/* Navi styles */
+
+header {
+    background-color: var(--header-bg);
+    padding: var(--header-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-search {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-menu);
+}
+
+.menu-icon div {
+    width: var(--menu-line-width);
+    height: var(--menu-line-height);
+    background-color: var(--nav-text);
+    margin: 5px 0;
+}
+
+.search {
+    width: var(--search-width);
+    padding: 10px 15px;
+    background-color: var(--search-bg);
+    border: none;
+    outline: none;
+}
+
+nav a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: var(--nav-text);
+    font-weight: bold;
+    font-size: var(--fs-button);
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--wine);
+}
+
+main {
+    padding: var(--main-padding);
+}
+
+
+
+
+
+
+
+
+
+
+/* hover for button for learn more and next  */
+
+.car-btn:hover {
+   background-color: #741F3D;
+   color: white;
+   transform: scale(1);
+}
+
+
+/* hover for button */
+.next-container {
+   margin-top: 100px;
+   text-align: right;
+}
+
+.next-btn {
+   padding: 12px 24px;
+   background-color: #d59aa5;
+   border: 3px solid #741F3D;
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   font-size: 16px;
+   border-radius: 12px;
+   transition: 0.2s ease;
+}
+
+.next-btn:hover {
+   background-color: #741F3D;
+   color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* intro paragraph */
+.intro{
+  max-width: 700px;  
+  margin: 0 auto;     
+  text-align: center; 
+  line-height: 1.5;   
+}
+
+
+/* How to change a tire Heading body   */
+/* paragraphs for body 1  */
+
+
+
+p{
+    font-family: "Abel", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    max-width: 500px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+/* 1st heading */
+
+h1 {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 41px;
+font-weight: bold;
+margin-bottom: 0px;
+width: 700px;
+text-align: center;
+}
+
+
+/* How to change a tire Heading 2   */
+ h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+h4{
+font-size: 25px;
+  margin-bottom: 10px;
+   width: 500px;
+}
+
+
+h5{
+  font-size: 25px;
+ margin-bottom: 10px;
+   width: 500px;
+}
+
+
+h6{
+  font-size: 25px;
+  margin-bottom: 10px;
+   width: 500px;
+}
+
+h7{
+  font-size: 25px;
+  margin-bottom: 10px;
+   width: 500px;
+}
+
+
+
+h8{
+  font-size: 25px;
+  margin-bottom: 10px;
+   width: 500px;
+}
+
+
+
+
+
+
+/* image movement  */
+
+img{
+ 
+  border: 5px solid #741F3D;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* container for How to Tire Page */
+
+
+/* Main container */
+.zigzag-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+
+/* Each step row */
+.zigzag-row{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+
+/* Reverse direction for zigzag effect */
+.zigzag-row.reverse{
+    flex-direction: row-reverse;
+}
+
+
+/* Image styling */
+.zigzag-row img{
+    width: 50%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+/* Text container */
+.zigzag-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* Intro paragraph */
+.intro{
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+/* Title */
+.zigzag-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+/* menu */
+
+.menu-icon{
+cursor:pointer;
+}
+
+.menu-search {
+display: flex;
+align-items: center;
+gap: 25px;
+}
+
+.menu-icon div {
+width: 30px;
+height: 3px;
+background-color: rgb(95, 39, 49);
+margin: 5px 0;
+}
+
+
+.menu-dropdown{
+display:none;
+background:#b47b84;
+padding:20px;
+}
+
+.menu-dropdown a{
+display:block;
+padding:10px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+}
+
+.menu-dropdown a:hover{
+background:#741F3D;
+color:white;
+}
+
+
+
+
+
+@media (min-width: 300px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);  /* 3 equal columns */
+    }
+}

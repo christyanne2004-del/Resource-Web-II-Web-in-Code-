@@ -1,30 +1,132 @@
-/* main body css elements*/
+/* Variables  for Background html*/
 * {
     margin: 0;
     padding: 0;
     
 }
 
+/* Fonts */
+
+.abel-regular{ 
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 /* background colour */
 body{
-  background-color: #FFE9F6; /* strawberry milk */
+  background-color: var(--cream);
+}
+
+
+
+/* https://www.w3schools.com/cssref/sel_root.php*/
+
+
+/* Root Variables for Colour and Fonts */
+
+:root{
+
+/* Colour Scheme */
+
+/* main background */
+--cream: #E8DBCC;
+--clr-neutral-100: var(--cream);
+
+/* accent beige */
+--sand: #C65A2E;
+--clr-neutral-200: var(--sand);
+
+/* muted rose */
+--rose: #5F0C27;
+--clr-accent-400: var(--rose);
+
+/* light pink */
+--pink: #FAA2C5;
+--clr-accent-300: var(--pink);
+
+/* dark accent */
+--wine: #741F3D;
+--clr-accent-500: var(--wine);
+
+/* header colours */
+--header-bg: #b47b84;
+--search-bg: #d59aa5;
+--nav-text: black;
+
+/* button colours */
+--btn-bg: #d59aa5;
+--btn-border: #8c4f5c;
+--btn-hover-bg: #741F3D;
+--btn-text: black;
+--btn-hover-text: white;
+
+
+
+
+/* Font Sizes */
+--fs-heading: 96px;
+--fs-subheading: 128px;
+
+--fs-body: 23px;
+
+/* Font Sizes for headers */
+--fs-h1: 40px;
+
+--fs-h2: 29px;
+--fs-h3: 29px;
+--fs-h4: 29px;
+--fs-h5: 29px;
+--fs-h6: 29px;
+
+--fs-small: 15px;
+--fs-button: 18px;
+
+
+/* Layout Sizes */
+--header-padding: 25px 80px;
+--main-padding: 80px 120px;
+
+--search-width: 300px;
+
+--menu-line-width: 30px;
+--menu-line-height: 3px;
+
+
+
+--content-width: 45%;
+--content-right-offset: 55%;
+
+
+/* Spacing */
+--gap-menu: 25px;
+
+--space-sm: 15px;
+--space-md: 30px;
+--space-lg: 40px;
+--space-xl: 60px;
+--space-xxl: 120px;
+
+
+/* Button Sizes */
+--btn-padding: 5px 50px;
+
 }
 
 
 /* Navi styles */
+
 header {
-    background-color:#fcc7e6;
-    padding: 25px 80px;
+    background-color: var(--header-bg);
+    padding: var(--header-padding);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 4px solid #8A0005; /* wine */
 }
 
-/* menu */
 
+/* menu */
 
 .menu-icon{
 cursor:pointer;
@@ -39,31 +141,27 @@ gap: 25px;
 .menu-icon div {
 width: 30px;
 height: 3px;
-background-color: #8A0005; /* wine */
+background-color: rgb(95, 39, 49);
 margin: 5px 0;
 }
 
 
-
-/* dropdown */
-
 .menu-dropdown{
 display:none;
-background:#FFBFE9; /* rose */
+background:#b47b84;
 padding:20px;
-border-top: 3px solid #8A0005;
 }
 
 .menu-dropdown a{
 display:block;
 padding:10px;
 text-decoration:none;
-color:#8A0005;
+color:black;
 font-weight:bold;
 }
 
 .menu-dropdown a:hover{
-background:#8A0005;
+background:#741F3D;
 color:white;
 }
 
@@ -71,43 +169,46 @@ color:white;
 
 
 
-/* search bar  */
 
- .search {
-    width: 220px;
+
+.search {
+    width: var(--search-width);
     padding: 10px 15px;
-    background-color:#f0dbe8; /* rose */
-    border: 2px solid #8A0005; /* wine border */
+    background-color: var(--search-bg);
+    border: none;
     outline: none;
-    border-radius: 0; /* NO rounded edges */
-    transition: 0.3s ease;
 }
-
-
-/* nav bar  */
 
 nav a {
     margin-left: 50px;
     text-decoration: none;
-    color: #8A0005; /* wine */
+    color: var(--nav-text);
     font-weight: bold;
-    font-size: 16px;
+    font-size: var(--fs-button);
     transition: 0.3s ease;
 }
 
 nav a:hover {
-    color: #FFBFE9; /* rose */
+    color: var(--wine);
 }
 
 main {
-    padding: 10px 100px;
+    padding: var(--main-padding);
 }
+
+
+
+
+
+
+
+
 
 
 /* hover for button for learn more and next  */
 
 .car-btn:hover {
-   background-color:#FFBFE9;
+   background-color: #741F3D;
    color: white;
    transform: scale(1);
 }
@@ -121,27 +222,20 @@ main {
 
 .next-btn {
    padding: 12px 24px;
-    margin-top: 15px;
    background-color: #d59aa5;
-   border: 2px solid #741F3D;
+   border: 3px solid #741F3D;
    text-decoration: none;
    color: black;
    font-weight: bold;
    font-size: 16px;
    border-radius: 12px;
    transition: 0.2s ease;
-   align-self: flex-start;
-  
 }
 
 .next-btn:hover {
    background-color: #741F3D;
-   color:#FFBFE9;
+   color: white;
 }
-
-
-
-
 
 
 
@@ -163,14 +257,11 @@ main {
 
 /* intro paragraph */
 .intro{
-  text-align: center;  
-  font-family: "Abel", sans-serif;
-  font-size: 20px;
-  width: 705px;
-  line-height: 1.7;
+  max-width: 700px;  
+  margin: 0 auto;     
+  text-align: center; 
+  line-height: 1.6;   
 }
-
-
 
 
 /* How to change a tire Heading body   */
@@ -227,72 +318,53 @@ line-height: 1.5;
 /* body of homepage starts here  */
 
 
-/* Girls Guide To Maintenance and Aesthetics Tool Kit Heading */
-
+/* 1st heading */
 h1 {
-color: #32064c;
-font-family: "Merriweather", serif;
-font-size: 50px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 41px;
 font-weight: bold;
-margin: auto;
-text-align: center;
-width: 1010px;
+margin-bottom: 0px;
+
+width: 700px;
 
 }
 
 
 
-/*  Heading  explore our page   */
-
+/* How to change a tire Heading 2   */
  h2{
-   color: #32064c;
-   font-family: "Merriweather", serif;
-   font-weight: bold;
-   font-size: 30px;
+   font-size: 25px;
    margin-bottom: 10px;
    width: 500px;
 }
 
-/*  Heading        */
 
 h3{
-    color: #32064c;
-    font-family: "Merriweather", serif;
-    font-size: 25px;
-    margin-bottom: 20px;
-    width: 500px;
-  }
-
-
-/*  Heading        */
-h4{
-    color: #32064c;
-    font-family: "Merriweather", serif;
-    font-size: 25px;
-    margin-bottom: 10px;
-    width: 500px;
-}
-
-
-/*  Heading        */
-h5{
-   color: #32064c;
-   font-family: "Merriweather", serif;
-   font-size: 25px;
-   margin-bottom: 10px;
+  font-size: 25px;
+  margin-bottom: 10px;
    width: 500px;
 }
 
-/*  Heading        */
+
+h4{
+font-size: 25px;
+  margin-bottom: 10px;
+   width: 500px;
+}
+
+
+h5{
+  font-size: 25px;
+ margin-bottom: 10px;
+   width: 500px;
+}
+
 
 h6{
-   color: #32064c;
-   font-family: "Merriweather", serif;
-   font-size: 25px;
-   margin-bottom: 10px;
+  font-size: 25px;
+  margin-bottom: 10px;
    width: 500px;
 }
-
 
 
 
@@ -354,29 +426,11 @@ gap: 5px;
 }
 
 
-.container {
-  display: grid;
-}
 
 
 
 
 
-
-
-
-
-
-
-
-
-/*footer content*/
-
-footer{
-    background-color: #fcc7e6;
-    border-top: 4px solid #8A0005; /* wine */
-    padding: 60px 80px 20px 80px;
-}
 
 
 
@@ -389,6 +443,12 @@ footer{
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+
+
+
+
+
 
 
 

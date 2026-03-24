@@ -1,0 +1,339 @@
+/* Variables  for Background html*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+
+.abel-regular{ 
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* background colour */
+body{
+  background-color: var(--strawberry);
+}
+
+
+/* https://www.w3schools.com/cssref/sel_root.php*/
+
+
+/* Root Variables for Colour and Fonts */
+
+:root{
+
+/* Colour Scheme */
+
+/* main background */
+--cream: #F6F5E1;
+--clr-neutral-100: var(--cream);
+
+/* light blue */
+--soft-sky: #B4EBFF;
+
+/* soft pink */
+--rose: #FFBFE9;
+
+/* light pink */
+--strawberry: #FFE9F6;
+
+/* dark accent */
+--wine: #8A0005;
+
+/* header colours */
+--header-bg: var(--cream);
+--search-bg: white;
+--nav-text: var(--wine);
+
+/* button colours */
+--btn-bg: var(--wine);
+--btn-border: var(--wine);
+--btn-hover-bg: black;
+--btn-text: white;
+--btn-hover-text: white;
+
+
+/* Font Sizes */
+--fs-heading: 60px;
+--fs-subheading: 40px;
+
+--fs-body: 18px;
+
+/* Font Sizes for headers */
+--fs-h1: 40px;
+
+--fs-h2: 29px;
+--fs-h3: 29px;
+--fs-h4: 29px;
+--fs-h5: 29px;
+--fs-h6: 29px;
+
+--fs-small: 15px;
+--fs-button: 18px;
+
+
+/* Layout Sizes */
+--header-padding: 20px 40px;
+--main-padding: 60px;
+
+--search-width: 200px;
+
+--menu-line-width: 25px;
+--menu-line-height: 3px;
+
+
+/* Spacing */
+--gap-menu: 15px;
+
+--space-sm: 15px;
+--space-md: 30px;
+--space-lg: 40px;
+--space-xl: 60px;
+
+
+/* Button Sizes */
+--btn-padding: 10px 25px;
+
+}
+
+
+
+
+/* Navi styles */
+
+header {
+    background-color: var(--header-bg);
+    padding: var(--header-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--wine);
+}
+
+.menu-search {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-menu);
+}
+
+.menu-icon div {
+    width: var(--menu-line-width);
+    height: var(--menu-line-height);
+    background-color: var(--nav-text);
+    margin: 5px 0;
+}
+
+
+
+/* updated search bar  */
+.search {
+    width: var(--search-width);
+    padding: 10px 15px;
+    background-color: var(--search-bg);
+    border: 2px solid var(--wine); /* burgundy border */
+    outline: none;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.search:focus{
+    width: 220px;
+}
+
+/* updated nav */
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--nav-text);
+    font-weight: bold;
+    font-size: var(--fs-button);
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--wine);
+}
+
+main {
+    padding: var(--main-padding);
+}
+
+
+
+
+/* hero section */
+
+.hero{
+    height: 50vh;
+    background: var(--rose);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: var(--fs-heading);
+    color: var(--wine);
+}
+
+.hero p{
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+
+
+
+/* hover for button for learn more and next  */
+
+.car-btn:hover {
+   background-color: var(--btn-hover-bg);
+   color: var(--btn-hover-text);
+   transform: scale(1);
+}
+
+
+/* hover for button */
+.next-container {
+   margin-top: 100px;
+   text-align: right;
+}
+
+.next-btn {
+   padding: 12px 24px;
+   background-color: var(--btn-bg);
+   border: 3px solid var(--btn-border);
+   text-decoration: none;
+   color: var(--btn-text);
+   font-weight: bold;
+   font-size: 16px;
+   border-radius: 20px;
+   transition: 0.2s ease;
+}
+
+.next-btn:hover {
+   background-color: var(--btn-hover-bg);
+   color: var(--btn-hover-text);
+}
+
+
+
+
+
+
+
+
+
+/* intro paragraph */
+.intro{
+  max-width: 700px;  
+  margin: 0 auto;     
+  text-align: center; 
+  line-height: 1.5;   
+}
+
+
+/* paragraphs for body 1  */
+
+p{
+    font-size: var(--fs-body);
+    line-height: 1.5;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* 1st heading */
+
+
+
+
+
+/* image movement  */
+
+img{
+  border: 3px solid var(--wine);
+}
+
+
+
+
+/* grid layout */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    padding: 60px;
+}
+
+
+
+
+.grid-item{
+    background: white;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid var(--wine);
+    transition: 0.3s;
+}
+
+.grid-item:hover{
+    transform: translateY(-10px);
+}
+
+
+/* image movements */
+
+.grid-item img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+
+
+
+/* menu */
+
+.menu-icon{
+cursor:pointer;
+}
+
+.menu-dropdown{
+display:none;
+background:var(--rose);
+padding:20px;
+}
+
+.menu-dropdown a{
+display:block;
+padding:10px;
+text-decoration:none;
+color:var(--nav-text);
+font-weight:bold;
+}
+
+.menu-dropdown a:hover{
+background:var(--wine);
+color:white;
+}
+
+
+/* screen sizing*/
+
+@media (min-width: 300px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

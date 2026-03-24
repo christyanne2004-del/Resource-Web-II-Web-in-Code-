@@ -1,132 +1,30 @@
-/* Variables  for Background html*/
+/* main body css elements*/
 * {
     margin: 0;
     padding: 0;
     
 }
 
-/* Fonts */
-
-.abel-regular{ 
-  font-family: var(--ff-primary);
-  font-weight: 400;
-  font-style: normal;
-}
 
 
 /* background colour */
 body{
-  background-color: var(--cream);
-}
-
-
-
-/* https://www.w3schools.com/cssref/sel_root.php*/
-
-
-/* Root Variables for Colour and Fonts */
-
-:root{
-
-/* Colour Scheme */
-
-/* main background */
---cream: #E8DBCC;
---clr-neutral-100: var(--cream);
-
-/* accent beige */
---sand: #C65A2E;
---clr-neutral-200: var(--sand);
-
-/* muted rose */
---rose: #5F0C27;
---clr-accent-400: var(--rose);
-
-/* light pink */
---pink: #FAA2C5;
---clr-accent-300: var(--pink);
-
-/* dark accent */
---wine: #741F3D;
---clr-accent-500: var(--wine);
-
-/* header colours */
---header-bg: #b47b84;
---search-bg: #d59aa5;
---nav-text: black;
-
-/* button colours */
---btn-bg: #d59aa5;
---btn-border: #8c4f5c;
---btn-hover-bg: #741F3D;
---btn-text: black;
---btn-hover-text: white;
-
-
-
-
-/* Font Sizes */
---fs-heading: 96px;
---fs-subheading: 128px;
-
---fs-body: 23px;
-
-/* Font Sizes for headers */
---fs-h1: 40px;
-
---fs-h2: 29px;
---fs-h3: 29px;
---fs-h4: 29px;
---fs-h5: 29px;
---fs-h6: 29px;
-
---fs-small: 15px;
---fs-button: 18px;
-
-
-/* Layout Sizes */
---header-padding: 25px 80px;
---main-padding: 80px 120px;
-
---search-width: 300px;
-
---menu-line-width: 30px;
---menu-line-height: 3px;
-
-
-
---content-width: 45%;
---content-right-offset: 55%;
-
-
-/* Spacing */
---gap-menu: 25px;
-
---space-sm: 15px;
---space-md: 30px;
---space-lg: 40px;
---space-xl: 60px;
---space-xxl: 120px;
-
-
-/* Button Sizes */
---btn-padding: 5px 50px;
-
+  background-color: #FFE9F6; /* strawberry milk */
 }
 
 
 /* Navi styles */
-
 header {
-    background-color: var(--header-bg);
-    padding: var(--header-padding);
+    background-color:#fcc7e6;
+    padding: 25px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 4px solid #8A0005; /* wine */
 }
 
-
 /* menu */
+
 
 .menu-icon{
 cursor:pointer;
@@ -141,27 +39,31 @@ gap: 25px;
 .menu-icon div {
 width: 30px;
 height: 3px;
-background-color: rgb(95, 39, 49);
+background-color: #8A0005; /* wine */
 margin: 5px 0;
 }
 
 
+
+/* dropdown */
+
 .menu-dropdown{
 display:none;
-background:#b47b84;
+background:#FFBFE9; /* rose */
 padding:20px;
+border-top: 3px solid #8A0005;
 }
 
 .menu-dropdown a{
 display:block;
 padding:10px;
 text-decoration:none;
-color:black;
+color:#8A0005;
 font-weight:bold;
 }
 
 .menu-dropdown a:hover{
-background:#741F3D;
+background:#8A0005;
 color:white;
 }
 
@@ -169,46 +71,43 @@ color:white;
 
 
 
+/* search bar  */
 
-
-.search {
-    width: var(--search-width);
+ .search {
+    width: 220px;
     padding: 10px 15px;
-    background-color: var(--search-bg);
-    border: none;
+    background-color:#f0dbe8; /* rose */
+    border: 2px solid #8A0005; /* wine border */
     outline: none;
+    border-radius: 0; /* NO rounded edges */
+    transition: 0.3s ease;
 }
+
+
+/* nav bar  */
 
 nav a {
     margin-left: 50px;
     text-decoration: none;
-    color: var(--nav-text);
+    color: #8A0005; /* wine */
     font-weight: bold;
-    font-size: var(--fs-button);
+    font-size: 16px;
     transition: 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--wine);
+    color: #FFBFE9; /* rose */
 }
 
 main {
-    padding: var(--main-padding);
+    padding: 10px 100px;
 }
-
-
-
-
-
-
-
-
 
 
 /* hover for button for learn more and next  */
 
 .car-btn:hover {
-   background-color: #741F3D;
+   background-color:#FFBFE9;
    color: white;
    transform: scale(1);
 }
@@ -222,19 +121,22 @@ main {
 
 .next-btn {
    padding: 12px 24px;
+   margin-top: 15px;
    background-color: #d59aa5;
-   border: 3px solid #741F3D;
+   border: 2px solid #741F3D;
    text-decoration: none;
    color: black;
    font-weight: bold;
    font-size: 16px;
    border-radius: 12px;
    transition: 0.2s ease;
+   align-self: flex-start;
+  
 }
 
 .next-btn:hover {
    background-color: #741F3D;
-   color: white;
+   color:#FFBFE9;
 }
 
 
@@ -244,12 +146,17 @@ main {
 
 
 
+/* image section  */
 
+/* header image */
 
-
-
-
-
+#img-header {
+    width: 100%;          /* full width */
+    height: 500px;        /* adjust height as you like */
+    object-fit: cover;    /* keeps it from stretching weirdly */
+    margin-top: 20px;
+  
+}
 
 
 
@@ -258,10 +165,15 @@ main {
 /* intro paragraph */
 .intro{
   max-width: 700px;  
-  margin: 0 auto;     
-  text-align: center; 
-  line-height: 1.6;   
+  margin: auto;    
+  text-align: center;  
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  width: 475px;
+  line-height: 1.7;
 }
+
+
 
 
 /* How to change a tire Heading body   */
@@ -318,68 +230,71 @@ line-height: 1.5;
 /* body of homepage starts here  */
 
 
-/* 1st heading */
-h1 {
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 41px;
-font-weight: bold;
-margin-bottom: 0px;
+/* Girls Guide To Maintenance and Aesthetics Tool Kit Heading */
 
-width: 700px;
+h1 {
+color: #32064c;
+font-family: "Merriweather", serif;
+font-size: 50px;
+font-weight: bold;
+margin: auto;
+text-align: center;
+width: 1010px;
 
 }
 
 
 
-/* How to change a tire Heading 2   */
+/*  Heading  explore our page   */
+
  h2{
+   color: #32064c;
+   font-family: "Merriweather", serif;
+   font-weight: bold;
+   font-size: 30px;
+   margin-bottom: 10px;
+   width: 500px;
+}
+
+/*  Heading        */
+
+h3{
+    color: #32064c;
+    font-family: "Merriweather", serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+    width: 500px;
+  }
+
+
+/*  Heading        */
+h4{
+    color: #32064c;
+    font-family: "Merriweather", serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    width: 500px;
+}
+
+
+/*  Heading        */
+h5{
+   color: #32064c;
+   font-family: "Merriweather", serif;
    font-size: 25px;
    margin-bottom: 10px;
    width: 500px;
 }
 
-
-h3{
-  font-size: 25px;
-  margin-bottom: 10px;
-   width: 500px;
-}
-
-
-h4{
-font-size: 25px;
-  margin-bottom: 10px;
-   width: 500px;
-}
-
-
-h5{
-  font-size: 25px;
- margin-bottom: 10px;
-   width: 500px;
-}
-
+/*  Heading        */
 
 h6{
-  font-size: 25px;
-  margin-bottom: 10px;
+   color: #32064c;
+   font-family: "Merriweather", serif;
+   font-size: 25px;
+   margin-bottom: 10px;
    width: 500px;
 }
-
-
-
-
-
-
-/* image movement  */
-
-img{
- 
-  border: 2.5px solid #741F3D;
-
-}
-
-
 
 
 
@@ -400,34 +315,16 @@ gap: 60px;
 padding: 70px;
 margin-top: 90px;
 border-radius: 10px;
+align-items: start; 
 }
 
-
-.grid-item{
-text-align: left;
-}
-
-
-.grid-item img{
-width: 100%;
-height: 230px;
-object-fit: cover;
-border-radius: 30px;
-background-color: #b47b84;
-align-items: flex-start;
-}
 
 
 .grid-item{
 display: flex;
 flex-direction: column;
-align-items: flex-start;
-gap: 5px;
-}
+text-align: left;
 
-
-.container {
-  display: grid;
 }
 
 
@@ -440,12 +337,28 @@ gap: 5px;
 
 
 
-@media (min-width: 300px) {
+
+
+
+/*footer content*/
+
+
+footer{
+    background-color: #fcc7e6;
+    border-top: 4px solid #8A0005; /* wine */
+    padding: 60px 80px 20px 80px;
+   
+}
+
+
+
+
+
+@media screen and (max-width: 400px) {
   .container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-
 
 
 

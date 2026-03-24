@@ -1,183 +1,113 @@
-/* Variables  for Background html*/
+/* main body css elements*/
 * {
     margin: 0;
     padding: 0;
     
 }
 
-/* Fonts */
-
-.abel-regular{ 
-  font-family: var(--ff-primary);
-  font-weight: 400;
-  font-style: normal;
-}
 
 
 /* background colour */
 body{
-  background-color: var(--cream);
+  background-color: #FFE9F6; /* strawberry milk */
 }
-
-
-
-/* https://www.w3schools.com/cssref/sel_root.php*/
-
-
-/* Root Variables for Colour and Fonts */
-
-:root{
-
-/* Colour Scheme */
-
-/* main background */
---cream: #E8DBCC;
---clr-neutral-100: var(--cream);
-
-/* accent beige */
---sand: #C65A2E;
---clr-neutral-200: var(--sand);
-
-/* muted rose */
---rose: #5F0C27;
---clr-accent-400: var(--rose);
-
-/* light pink */
---pink: #FAA2C5;
---clr-accent-300: var(--pink);
-
-/* dark accent */
---wine: #741F3D;
---clr-accent-500: var(--wine);
-
-/* header colours */
---header-bg: #b47b84;
---search-bg: #d59aa5;
---nav-text: black;
-
-/* button colours */
---btn-bg: #d59aa5;
---btn-border: #8c4f5c;
---btn-hover-bg: #741F3D;
---btn-text: black;
---btn-hover-text: white;
-
-
-
-
-/* Font Sizes */
---fs-heading: 96px;
---fs-subheading: 128px;
-
---fs-body: 23px;
-
-/* Font Sizes for headers */
---fs-h1: 40px;
-
---fs-h2: 29px;
---fs-h3: 29px;
---fs-h4: 29px;
---fs-h5: 29px;
---fs-h6: 29px;
-
---fs-small: 15px;
---fs-button: 18px;
-
-
-/* Layout Sizes */
---header-padding: 25px 80px;
---main-padding: 80px 120px;
-
---search-width: 300px;
-
---menu-line-width: 30px;
---menu-line-height: 3px;
-
-
-
---content-width: 45%;
---content-right-offset: 55%;
-
-
-/* Spacing */
---gap-menu: 25px;
-
---space-sm: 15px;
---space-md: 30px;
---space-lg: 40px;
---space-xl: 60px;
---space-xxl: 120px;
-
-
-/* Button Sizes */
---btn-padding: 5px 50px;
-
-}
-
-
 
 
 /* Navi styles */
-
 header {
-    background-color: var(--header-bg);
-    padding: var(--header-padding);
+    background-color:#fcc7e6;
+    padding: 25px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 4px solid #8A0005; /* wine */
+}
+
+/* menu */
+
+
+.menu-icon{
+cursor:pointer;
 }
 
 .menu-search {
-    display: flex;
-    align-items: center;
-    gap: var(--gap-menu);
+display: flex;
+align-items: center;
+gap: 25px;
 }
 
 .menu-icon div {
-    width: var(--menu-line-width);
-    height: var(--menu-line-height);
-    background-color: var(--nav-text);
-    margin: 5px 0;
+width: 30px;
+height: 3px;
+background-color: #8A0005; /* wine */
+margin: 5px 0;
 }
 
-.search {
-    width: var(--search-width);
-    padding: 10px 15px;
-    background-color: var(--search-bg);
-    border: none;
-    outline: none;
+
+
+/* dropdown */
+
+.menu-dropdown{
+display:none;
+background:#FFBFE9; /* rose */
+padding:20px;
+border-top: 3px solid #8A0005;
 }
+
+.menu-dropdown a{
+display:block;
+padding:10px;
+text-decoration:none;
+color:#8A0005;
+font-weight:bold;
+}
+
+.menu-dropdown a:hover{
+background:#8A0005;
+color:white;
+}
+
+
+
+
+
+/* search bar  */
+
+ .search {
+    width: 220px;
+    padding: 10px 15px;
+    background-color:#f0dbe8; /* rose */
+    border: 2px solid #8A0005; /* wine border */
+    outline: none;
+    border-radius: 0; /* NO rounded edges */
+    transition: 0.3s ease;
+}
+
+
+/* nav bar  */
 
 nav a {
     margin-left: 50px;
     text-decoration: none;
-    color: var(--nav-text);
+    color: #8A0005; /* wine */
     font-weight: bold;
-    font-size: var(--fs-button);
+    font-size: 16px;
     transition: 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--wine);
+    color: #FFBFE9; /* rose */
 }
 
 main {
-    padding: var(--main-padding);
+    padding: 10px 100px;
 }
-
-
-
-
-
-
-
-
 
 
 /* hover for button for learn more and next  */
 
 .car-btn:hover {
-   background-color: #741F3D;
+   background-color:#FFBFE9;
    color: white;
    transform: scale(1);
 }
@@ -191,24 +121,23 @@ main {
 
 .next-btn {
    padding: 12px 24px;
+    margin-top: 15px;
    background-color: #d59aa5;
-   border: 3px solid #741F3D;
+   border: 2px solid #741F3D;
    text-decoration: none;
    color: black;
    font-weight: bold;
    font-size: 16px;
    border-radius: 12px;
    transition: 0.2s ease;
+   align-self: flex-start;
+  
 }
 
 .next-btn:hover {
    background-color: #741F3D;
-   color: white;
+   color:#FFBFE9;
 }
-
-
-
-
 
 
 
@@ -226,90 +155,116 @@ main {
 
 /* intro paragraph */
 .intro{
-  max-width: 700px;  
-  margin: 0 auto;     
-  text-align: center; 
-  line-height: 1.5;   
+  
+  margin-top:  50px;  
+  text-align: center;  
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+ 
+  line-height: 1.7;
+
+    
+   
+    margin-left: 0;
 }
 
 
-/* How to change a tire Heading body   */
-/* paragraphs for body 1  */
 
 
 
-p{
-    font-family: "Abel", sans-serif;
-    font-size: 17px;
-    line-height: 1.5;
-    max-width: 500px;
+    /* 1st heading */
+
+    h1 {
+    color: #32064c;
+    font-family: "Merriweather", serif;
+    font-size: 41px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    width: 700px;
     text-align: left;
-    margin: 0 auto;
-}
-
-
-
-
-
-
-
-
-/* 1st heading */
-
-h1 {
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 41px;
-font-weight: bold;
-margin-bottom: 0px;
-width: 700px;
-text-align: center;
-}
+    margin-top: 30px;
+    }
 
 
 /* How to change a tire Heading 2   */
- h2{
-    text-align: center;
-    margin-bottom: 20px;
+  h2{
+    color: #32064c;
+    font-family: "Merriweather", serif;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: left;
+    
 }
 
 h3{
-    font-size: 24px;
-    margin-bottom: 10px;
+    color: #32064c;
+    font-family: "Merriweather", serif;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 
 h4{
-font-size: 25px;
-  margin-bottom: 10px;
-   width: 500px;
+     color: #32064c;
+    font-family: "Merriweather", serif;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 
 h5{
-  font-size: 25px;
- margin-bottom: 10px;
-   width: 500px;
+     color: #32064c;
+    font-family: "Merriweather", serif;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 
 h6{
-  font-size: 25px;
-  margin-bottom: 10px;
-   width: 500px;
+    color: #32064c;
+    font-family: "Merriweather", serif;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
+
 h7{
-  font-size: 25px;
-  margin-bottom: 10px;
-   width: 500px;
+    color: #32064c;
+    font-family: "Merriweather", serif;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 
 
 h8{
-  font-size: 25px;
-  margin-bottom: 10px;
-   width: 500px;
+    color: #32064c;
+    font-family: "Merriweather", serif;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+
+
+h9{
+    color: #32064c;
+    font-family: "Merriweather", serif;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+
+
+h9{
+    color: #32064c;
+    font-family: "Merriweather", serif;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 

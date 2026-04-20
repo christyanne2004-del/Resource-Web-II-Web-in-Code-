@@ -1,0 +1,292 @@
+/* main body css elements*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: "Merriweather", serif;
+}
+
+/* background colour */
+body {
+    background-color: #FFE9F6;
+}
+
+
+/* Navi styles */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #8A0005;
+    padding-top: 10px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+}
+
+
+
+
+/* nav bar */
+nav a {
+    text-decoration: none;
+    color: #6c3c1a;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.3s ease;
+    margin-left: 25px;
+    margin-right: 25px; 
+}
+
+nav a:hover {
+    color: #FFBFE9;
+}
+
+main {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 25px;
+    margin-bottom: 0;
+    margin-left: 25px;
+}
+
+/* button */
+.dropbtn {
+    background: none;
+    border: none;
+    color: #6c3c1a;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    font-family: "Merriweather", serif;
+    transition: 0.3s ease;
+}
+
+.dropbtn:hover {
+    color: #FFBFE9;
+}
+
+/* dropdown box */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFE9F6;
+    min-width: 160px;
+    z-index: 1000;
+    border: 1px solid #d59aa5;
+}
+
+/* dropdown links */
+.dropdown-content a {
+    color: #6c3c1a;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    font-family: "Merriweather", serif;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #FFBFE9;
+    color: rgb(126, 95, 95);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* header image */
+#img-header {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 15px;
+}
+
+
+/* homepage images */
+.homepage-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.homepage-image img {
+    width: 70%;
+    max-width: 300px;
+}
+
+
+/* intro paragraph */
+.intro {
+    max-width: 650px;
+    font-size: 17px;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    margin: auto;
+    padding: 12px;
+    text-align: center;
+    font-family: "Abel", sans-serif;
+    color: #3a3a3a;
+}
+
+
+/* paragraphs */
+p {
+    font-family: "Abel", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0 auto 12px auto;
+    text-align: left;
+}
+
+
+/* headings */
+h1 {
+    font-family: "Merriweather", serif;
+    color: #6c3c1a;
+    font-size: 50px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    width: 1010px;
+}
+
+h2 {
+    font-family: "Merriweather", serif;
+    color: #6c3c1a;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+/* mobile  */
+
+
+@media (max-width: 680px) {
+
+     main {
+        padding: auto; 
+    }
+
+    /*  nav  */
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+    /* images  */
+    #img-header {
+        height: 250px;
+    }
+
+  
+/* headings  */
+
+    header {
+        padding-top: 10px;
+    }
+      
+    h1 {
+        font-size: 22px;
+        width: auto;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+
+/* intro  */
+
+    .intro {
+        font-size: 15px;
+    }
+
+   
+}
+
+
+@media (max-width: 768px) { /* Tablets */ 
+
+         main {
+        padding: auto; 
+    }
+
+    /*  nav  */
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+    /* images  */
+    #img-header {
+        height: 250px;
+    }
+
+  
+/* headings  */
+
+    header {
+        padding-top: 10px;
+    }
+      
+    h1 {
+        font-size: 22px;
+        width: auto;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+
+/* intro  */
+
+    .intro {
+        font-size: 13px;
+    }
+
+   
+}

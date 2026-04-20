@@ -1,0 +1,422 @@
+/* main body css elements*/
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav {
+    font-family: "Merriweather", serif;
+}
+
+/* background colour */
+body{
+  background-color: #FFE9F6 ; 
+}
+
+
+/* Navi styles */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #8A0005;
+    padding-top: 10px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+}
+
+
+
+
+/* nav bar  */
+
+nav a {
+    text-decoration: none;
+    color:#6c3c1a; 
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.3s ease;
+    margin-left: 25px;
+    margin-right: 25px; 
+}
+
+nav a:hover {
+    color:#FFBFE9;
+}
+
+
+main {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+
+/* menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 25px;
+    margin-bottom: 0;
+    margin-left: 25px;
+}
+
+/* button */
+.dropbtn {
+    background: none;
+    border: none;
+    color: #6c3c1a;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    font-family: "Merriweather", serif;
+    transition: 0.3s ease;
+}
+
+
+.dropbtn:hover {
+    color: #FFBFE9;
+}
+
+/* dropdown box */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFE9F6;
+    min-width: 160px;
+    z-index: 1000;
+    border: 1px solid #d59aa5;
+}
+
+/* dropdown links */
+.dropdown-content a {
+    color: #6c3c1a;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    font-family: "Merriweather", serif;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+}
+
+
+/* hover on links */
+.dropdown-content a:hover {
+    background-color: #FFBFE9;
+    color: rgb(126, 95, 95);
+}
+
+/* show menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/* header image */
+
+img-header {
+    width: 100%;      
+    height: 500px;       
+    object-fit: cover;   
+    margin-top: 30px;
+  
+}
+
+
+
+.tool-img img {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    display: block;
+    margin-left: 50px; 
+}
+
+
+/* tools list */
+
+.tools-list {
+    list-style-position: inside;
+    max-width: 500px;         
+    margin-left: auto;         
+    margin-right: auto;        
+    margin-top: 10px;
+ 
+}
+
+/* each item */
+.tools-list li {
+    font-family: "Abel", sans-serif;
+    margin-bottom: 50px;
+    text-align: left;
+    color: #382222;
+    cursor: pointer;             
+    transition: 0.3s ease;       
+}
+
+.tools-list li:hover {
+    color: #9d5f33;              
+}
+
+
+/* hiding the images */
+.tool-img {
+    display: none;
+}
+
+
+/* bullet styling */
+.tools-list li::marker {
+    font-size: 19px;
+    color: #775151;
+}
+
+
+/* paragraphs */
+
+p{
+    font-family: "Abel", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 500px;  
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: left;
+}
+    
+
+
+/* How to change a tire Heading 2   */
+ h2{
+    
+    color: #6c3c1a;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    max-width: 500px;      
+    margin-left: auto;      
+    margin-right: auto;     
+    text-align: left;
+    
+}
+
+h3{
+    
+    color: #6c3c1a;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    max-width: 500px;      
+    margin-left: auto;      
+    margin-right: auto;     
+    text-align: left;
+}
+
+h3:hover {
+    color: #9d5f33;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+h4{
+      
+   color: #6c3c1a;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    max-width: 500px;      
+    margin-left: auto;      
+    margin-right: auto;     
+    text-align: left;
+}
+
+
+h5{
+      
+    color: #6c3c1a;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    max-width: 500px;      
+    margin-left: auto;      
+    margin-right: auto;     
+    text-align: left;
+}
+
+h6{
+      
+    color: #6c3c1a;
+   font-size: 20px;
+    font-family: "Merriweather", serif;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    max-width: 500px;      
+    margin-left: auto;      
+    margin-right: auto;     
+    text-align: left;
+}
+
+
+h7{
+      
+  color: #6c3c1a;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    max-width: 500px;      
+    margin-left: auto;      
+    margin-right: auto;     
+    text-align: left;
+}
+
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px; 
+}
+
+
+
+
+/* mobile  */
+
+@media (max-width: 680px) {
+
+ 
+    /* nav */
+
+    nav {
+        text-align: center;
+    }
+
+    /* images */
+    img-header {
+        height: 200px;
+    }
+
+    .tool-img img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+   
+    p {
+        font-size: 15px;
+    }
+
+    /* headings */
+
+     header {
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+    h7 {
+        font-size: 16px;
+    }
+
+  
+
+}
+
+
+@media (max-width: 768px) { /* Tablets */ 
+      /* nav */
+
+    nav {
+        text-align: center;
+    }
+
+    /* images */
+    img-header {
+        height: 200px;
+    }
+
+    .tool-img img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+   
+    p {
+        font-size: 15px;
+    }
+
+    /* headings */
+
+     header {
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+    h7 {
+        font-size: 16px;
+    }
+      }
